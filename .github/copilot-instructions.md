@@ -23,6 +23,17 @@
 - Follow current test style (`TestClient`, route behavior, HTML fragment assertions).
 - Reuse utility CSS in `app/static/css/app.css`; add utilities there if needed.
 
+## Design Guide
+- Keep the default experience in dark mode with premium, minimal visual styling.
+- Use the design tokens and utility classes in `app/static/css/app.css` before adding one-off styles.
+- Favor clean spacing and clear hierarchy: bold display headings, readable body text, restrained decoration.
+- Preserve accessible contrast for text and controls on dark surfaces.
+- Keep motion subtle and purposeful (fade, slight lift/scale); avoid flashy or exaggerated animation.
+- Use rounded corners and soft shadows consistently across cards, buttons, and overlays.
+- Keep board interactions clear: untouched, marked, winning, and free-space states must remain visually distinct.
+- Maintain responsive layouts for both mobile and desktop without changing existing HTMX behavior.
+- Do not duplicate logic in templates; visual changes should stay in templates/CSS only.
+
 ## Repo Docs
 Link instead of duplicating guidance:
 - Setup flow: `README.md`, `workshop/00-overview.md`, `workshop/01-setup.md`
