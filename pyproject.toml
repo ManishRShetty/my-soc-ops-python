@@ -27,6 +27,7 @@ line-length = 88
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W"]
+extend-select = ["ANN", "ARG"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
